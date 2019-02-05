@@ -14,6 +14,7 @@ buttonInfo.addEventListener("click", () => {
     console.log(newDate)
     var day = Number(newDate.slice(3, 6))
     var month = Number(newDate.slice(0, 2))
+    divContainer.innerHTML = ``;
     console.log(month)
     console.log(day)
     if (day < 0 || month < 0 || day > 31 || month > 12) {
@@ -177,4 +178,5 @@ if (month === 01 || month === 02 && day >= 20 || day <= 18) {
     console.log('Capricorn')
 }
 })
+
 */

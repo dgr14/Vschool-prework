@@ -1,27 +1,127 @@
+*{
+  margin: 0;
+}
 h1 {
   text-align: center;
   font-weight: bold;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  border-style: solid;
-  border-color: midnightblue;
-
+  font-size: 80px; 
+  padding: 20px;
+  text-shadow: 3px 3px midnightblue;
 }
 
 h2 {
   text-align: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 50px;
+  padding: 50px 20px 15px 20px;
+  color: lavender;
+  text-shadow: 3px 3px midnightblue;
+
 }
 
 h3 {
   text-align: center;
+  font-weight: 700;
+  padding: 0px 10px 20px 10px;
+  color: lavender;
+}
+
+p {
+  /* height: 50%; */
+  font-family: "Roboto";
+  font-size: 25px;
+  line-height: 50px;
 }
 
 #getBirthday {
-  margin: auto;
   display: block;
+  color: lavender;
+  background: black;
+  margin: 20px 0;
+  
 }
 
 
 #enterDate {
-  margin: auto;
   display: block;
+  background: black;
+  color: lavender;
 }
+
+#content {
+  font-family: Arial, Helvetica, sans-serif;
+  color: lavender;
+  background: rgba(1,1,1,0.5);
+   display: flex;
+  align-items: center;
+  margin: 100px 50px 0px 50px;
+}
+
+#zodiacInfo {
+  width: 60%;
+  height: auto;
+  border-style: solid;
+  border: none;
+  padding: 0 10px;
+  background: rgba(1,1,1,0.5);
+   display: flex;
+  align-items: center; 
+  
+}
+
+
+#zodiacInfo-container{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  margin-top: 50px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#bottomHalf {
+  background-image: url('https://images.pexels.com/photos/713664/pexels-photo-713664.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* background-color: lavender; */
+}
+
+#upperHalfSection {
+  
+  /* background-color: lavender; */
+}
+
+#photoSep {
+  background: linear-gradient(black, midnightblue,  black);
+}
+
+.zodiac-image{
+  background-image: url("https://images.pexels.com/photos/433155/pexels-photo-433155.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: lavender;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+/* animation: rotate 1s linear;
+
+@keyframes rotate{
+  from{
+    transform: rotateZ(0deg)
+  } to {
+    transform: rotateZ(360deg)
+  }
+} */

@@ -5,33 +5,42 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="styles.css">
   <title>Astrological Sign</title>
 </head>
 
 <body>
-    <div>
-        <h1>Zodiac Signs</h1>
-        <p>Your Zodiac sign, or star sign, reflects the position of the sun when you were born. With its strong influence on your personality, character, and emotions, your sign is a powerful tool for understanding yourself and your relationships. And of course, your sign can show you the way to an incredible life. Enter your birthday below to discover their powerful traits and secrets.</p>
-      </div>
-
+  <div id = upperHalfSection>
+  <div class="zodiac-image">
+    <h1>Zodiac Signs</h1>
+    <div id="zodiacInfo-container">
+      <p id="zodiacInfo">Your Zodiac sign, or star sign, reflects the position of the sun when you were born. With its
+        strong influence on your personality, character, and emotions, your sign is a powerful tool for understanding
+        yourself and your relationships. And of course, your sign can show you the way to an incredible life. Enter
+        your
+        birthday below to discover their powerful traits and secrets.</p>
+    </div>
+  </div>
+  <div id = photoSep>
   <h2>Find out your<br>astrological sign!</h2>
 
   <h3>Please enter the day and month of your birth:</h3><br>
-  <div>
-  <input type="date" id="getBirthday" name="userDate">
-  <button id= enterDate>Enter</button>
-  <div id = "content">
-    
+    </div>
+    </div>
+  <div id = bottomHalf>
+    <input type="date" id="getBirthday" name="userDate">
+    <button id=enterDate>Enter</button>
+    <div id="content">
+
     </div>
   </div>
 
-  
+  <!-- <footer>Made by Darius Raazi</footer> -->
+
 
   <script src="app.js"></script>
 
 </body>
 
 </html>
-
-
