@@ -1,0 +1,27 @@
+h1 {
+    text-align: center;
+    align-items: center;
+
+}
+
+h3 {
+    text-align: center;
+}
+
+.box {
+width: 100vw;
+height: 100vh;
+border: 1px solid black;
+}
+
+#container {
+    display: flex;
+}
+
+#banner {
+    height: 60vh;
+    background-image: url("https://images.pexels.com/photos/417458/pexels-photo-417458.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
