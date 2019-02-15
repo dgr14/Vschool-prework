@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face{
+    font-family: marioFont;
+    src: url("./font/SuperMario256.ttf")
+}
+
+#container {
+    display: grid;
+    grid-template-rows: 10vh 40vh 30vh 10vh;
+}
+
+#title {
+    display: flex;
+    font-family: marioFont;
+    background-color: yellow;
+    
+    align-items: center;
+    padding-left: 50px;
+}
+
+#lBox {
+    background-color: red;
+    background-image: url("https://coursework.vschool.io/content/images/2015/07/luigi.png");
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#aboutMe {
+    background-color: white;
+}
+
+#footer {
+    background-color: yellow;
+}
