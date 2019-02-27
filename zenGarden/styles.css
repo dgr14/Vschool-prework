@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h3, p {
+    margin: 0.6em 0;
+}
+
+h1 {
+    padding-bottom: 5px;
+    font-size: 2.5em;
+}
+
+h2 {
+    padding-top: 5px;
+    padding-bottom: 30px;
+    font-size: 1.1em;
+}
+
+p {
+    font-size: 1em;
+    margin: 0.75em 0;
+    line-height: 2;
+}
+
+.leftHeader {
+    display: flex;
+    align-items: flex-start;
+    text-align: center;
+    
+}
+
+#container {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    padding: 0 5em 0 5em;
+    font-family: 'Libre Baskerville', sans-serif;
+    color: #325050;
+    grid-gap: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#topContent {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 2em 2em;
+
+}
+
+h3.bodyHeader {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+#topContent, h4 {
+    padding: 0 2em 0 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#greenBox {
+    background: rgba(138,188,159,0.5);
+    background-attachment: fixed;
+    height: 110%;
+    background-image: url("http://www.csszengarden.com/214/contours-opaque.png"), url("http://www.csszengarden.com/214/gridlines-opaque.png"), url("http://www.csszengarden.com/214/bamboo.png");
+}
+
+#topContent.rtSide {
+    display: flex;
+    flex-direction: row-reverse;
+    align-content: flex-start;
+}
+
+#leftContent {
+    grid-gap: 40px;
+}
+
+#rightContent {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.pTopWhiteBox {
+    display: flex;
+    align-content: space-between;
+    justify-content: center;
+    text-align: center;
+}
+
+@media only screen and (min-width: 500px){
+    #container >div{
+        grid-template-columns: 2fr 1fr;
+    }
+    #rightContent{
+        grid-column: 2/2
+    }
+}

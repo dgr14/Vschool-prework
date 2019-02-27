@@ -20,6 +20,7 @@ buttonInfo.addEventListener("click", () => {
     if (day < 0 || month < 0 || day > 31 || month > 12) {
         alert('You have entered an incorrect date!')
     } else {
+        
         if (month === 01 && day >= 20 || month === 02 && day <= 18) {
             console.log('Aquarius')
             var aquarius = document.createElement("p");
@@ -27,7 +28,7 @@ buttonInfo.addEventListener("click", () => {
             aquarius.className = "animate"
             aquarius.textContent = "Aquarians present themselves in one of two ways. One on hand, you'll see someone who is shy, and quiet. On the other, an Aquarian can be boisterous, eccentric, and energetic. Both are deep thinkers with a love of helping others. Highly intellectual, this is a sign of fierce independence that prizes intuition tempered with logic. Both personality types have an uncanny ability to see both sides of an argument without prejudice, making them excellent problem-solvers. While very much attuned to the energies around them, Aquarians have a deep need to take time out alone and away to rejuvenate themselves. The keyword for this sign is imagination. The Aquarian can see a world of possibilities even when there appears to be none."
             divContainer.appendChild(aquarius)
-        
+         
 
         } else if (month === 2 && day >= 19 || month === 03 && day <= 20) {
             console.log('Pisces')
@@ -131,10 +132,16 @@ buttonInfo.addEventListener("click", () => {
             console.log('This Date is incorrect')
         }
 
+        while (month <= 12){
+            console.log("An amazing month to be born")
+            break;
+        
+        }
+
+
     }
 }
 )
-
 /*  Aquarius - 01/20 - 02/18
     Pisces - 02/19 - 03/20
     Aries - 03/21 - 04/19
@@ -147,48 +154,4 @@ buttonInfo.addEventListener("click", () => {
     Scorpio - 10/23 - 11/21
     Sagittarius - 11/22 - 12/21
     Capricorn - 12/22 - 01/19
-
-*/
-
-/*
-if (month === 01 || month === 02 && day >= 20 || day <= 18) {
-    console.log('Aquarius')
-} else if (month === 02 || month === 03 && day >= 19 || day <= 20) {
-    if(month === 04){
-        console.log('Aries')
-    } else {
-        console.log('Pisces')
-    }
-
-} else if (month === 03 || month === 04 && day >= 21 || day <= 19) {
-    console.log('Aries')
-
-} else if (month === 04 || month === 05 && day >= 20 || day <= 20) {
-    console.log('Taurus')
-
-} else if (month === 05 || month === 06 && day >= 21 || day <= 20) {
-    console.log('Gemini')
-
-} else if (month === 06 || month === 07 && day >= 21 || day <= 20) {
-    console.log('Cancer')
-
-} else if (month === 07 || month === 08 && day >= 23 || day <= 22) {
-    console.log('Leo')
-
-} else if (month === 08 || month === 09 && day >= 23 || day <= 22) {
-    console.log('Virgo')
-
-} else if (month === 09 || month === 10 && day >= 23 || day <= 22) {
-    console.log('Libra')
-
-} else if (month === 10 || month === 11 && day >= 23 || day <= 21) {
-    console.log('Scorpio')
-
-} else if (month === 11 || month === 12 && day >= 22 || day <= 19) {
-    console.log('Sagittarius')
-} else {
-    console.log('Capricorn')
-}
-})
-
-*/
+    */

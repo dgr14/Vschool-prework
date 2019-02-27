@@ -4,17 +4,17 @@
 h1 {
   text-align: center;
   font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 80px; 
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 7em; 
   padding: 20px;
   text-shadow: 3px 3px midnightblue;
 }
 
 h2 {
   text-align: center;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 50px;
-  padding: 50px 20px 15px 20px;
+  padding: 10px 20px 15px 20px;
   color: lavender;
   text-shadow: 3px 3px midnightblue;
 
@@ -28,25 +28,48 @@ h3 {
 }
 
 p {
-  /* height: 50%; */
   font-family: "Roboto";
-  font-size: 25px;
+  font-size: 35px;
   line-height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input{
+  font-size: 2em;
+  text-align: center;
+  height: 2em;
+  width: 10em;
+}
+
+button{
+  font-size: 1em;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  height: 2em;
+  width: 6em;
+  opacity: 0.8;
+  background-color: midnightblue;
 }
 
 #getBirthday {
   display: block;
   color: lavender;
   background: black;
-  margin: 20px 0;
+  margin: 2em 2em 3em 2em;
   
 }
-
 
 #enterDate {
   display: block;
   background: black;
   color: lavender;
+}
+
+#scrollDown{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  line-height: 15px;
+  padding: 1em 0;
 }
 
 #content {
@@ -55,11 +78,16 @@ p {
   background: rgba(1,1,1,0.5);
    display: flex;
   align-items: center;
-  margin: 100px 50px 0px 50px;
+  justify-content: center;
+  margin: 100px 50px 0 50px;
 }
 
 .animate{
   animation: fadeIn 2s linear;
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  padding: 1.2em 1.2em;
 }
 
 @keyframes fadeIn{
@@ -77,25 +105,31 @@ p {
 }
 
 #zodiacInfo {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 1.9em;
   width: 60%;
   height: auto;
   border-style: solid;
   border: none;
-  padding: 0 10px;
-  background: rgba(1,1,1,0.5);
-   display: flex;
+  padding: 0.8em 0.8em;
+  background: rgba(1,1,1,0.3);
+  display: flex;
   align-items: center; 
-  
+  justify-content: center;
 }
 
+.footer{
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: .9em;
+  color: black;
+}
 
 #zodiacInfo-container{
   height: 100%;
   width: 100%;
   display: flex;
-  margin-top: 50px;
-  align-items: flex-start;
   justify-content: center;
+  align-items: center;
 }
 
 #bottomHalf {
@@ -103,17 +137,11 @@ p {
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: lavender; */
-}
-
-#upperHalfSection {
-  
-  /* background-color: lavender; */
 }
 
 #photoSep {
